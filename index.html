@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Study Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <h1>AI Study Helper</h1>
+
+    <!-- Input Section -->
+    <div class="input-section">
+
+      <label for="topicInput">Topic</label>
+      <input type="text" id="topicInput" placeholder="Enter topic">
+
+      <label for="chapterText">Chapter Text</label>
+      <textarea id="chapterText" placeholder="Paste chapter text here"></textarea>
+
+      <p class="or-text">OR</p>
+
+      <label for="questionInput">Ask a Question</label>
+      <input type="text" id="questionInput" placeholder="Ask a question here">
+
+    </div>
+
+    <!-- Option Section -->
+    <div class="option-section">
+      <p>Generate:</p>
+
+      <label>
+        <input type="radio" name="outputType" value="summary">
+        Summary
+      </label>
+
+      <label>
+        <input type="radio" name="outputType" value="notes">
+        Notes
+      </label>
+
+      <label>
+        <input type="radio" name="outputType" value="mcqs">
+        MCQs
+      </label>
+
+      <label>
+        <input type="radio" name="outputType" value="answer">
+        Answer
+      </label>
+
+      <!-- Generate Button -->
+      <button id="generateBtn">Generate</button>
+    </div>
+
+    <!-- Output Section -->
+    <div class="output-section">
+      <h3>Output</h3>
+      <div id="outputBox"></div>
+    </div>
+
+    <!-- Download Button -->
+    <button id="downloadBtn">Download</button>
+
+  </div>
+
+  <!-- JS MUST be here -->
+  <script src="script.js"></script>
+</body>
+</html>
+
